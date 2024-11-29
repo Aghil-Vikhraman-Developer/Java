@@ -1,0 +1,45 @@
+//QUESTION
+
+
+/*11.CREATE A CLASS DEPARTMENT HAVING A METHOD GETCOURSES THAT PRINTS "THESE ARE THE DEPARTMENT'S COURSES".
+ IT WILL HAVE TWO SUBCLASSES, COMPUTERSCIENCE AND MECHANICALENGINEERING, EACH HAVING A METHOD WITH THE SAME NAME THAT PRINTS SPECIFIC COURSES FOR THE RESPECTIVE DEPARTMENTS.
+ CALL THE METHOD BY CREATING AN OBJECT OF EACH OF THE THREE CLASSES.
+*/
+
+
+/*
+    TEST CASE:
+        Input and Output:
+            Courses: Data Structures, Algorithms, Operating Systems
+            Courses: Thermodynamics, Fluid Mechanics, Heat Transfer
+
+*/
+
+
+//ANSWER
+
+
+class Department {
+    public void getCourses() {
+      System.out.println("These are the department's courses");
+    }
+  }
+  class ComputerScience extends Department {
+    public void getCourses() {
+      System.out.println("Courses: Data Structures, Algorithms, Operating Systems");
+    }
+  }
+  
+  class MechanicalEngineering extends Department {
+    public void getCourses() {
+      System.out.print("Courses: Thermodynamics, Fluid Mechanics, Heat Transfer");
+    }
+  }
+  class p11 {
+    public static void main(String[] args) {
+      ComputerScience cs = new ComputerScience();
+      MechanicalEngineering me = new MechanicalEngineering();
+      cs.getCourses();
+      me.getCourses();
+    }
+  }
