@@ -1,0 +1,5 @@
+Which is the best approach?
+   1.if we use extends then we cannot extend anyother class
+   2.Where as in the runnable method we can do so but by using implement
+
+so runnable wins
